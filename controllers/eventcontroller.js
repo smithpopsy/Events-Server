@@ -21,13 +21,13 @@ const createEvent = async (req, res) => {
   try {
     if (
       !date ||
-      title ||
-      startTime ||
-      endTime ||
-      description ||
-      tags ||
-      free ||
-      category
+      !title ||
+      !startTime ||
+      !endTime ||
+      !description ||
+      !tags ||
+      !free ||
+      !category
     ) {
       return res
         .status(400)

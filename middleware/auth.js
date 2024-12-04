@@ -22,7 +22,7 @@ const  auth = async (req, res, next) => {
             userId: payload.userId,
             email: payload.email,
         }
-
+next()
     } catch (error) {
           return res
             .status(401)
